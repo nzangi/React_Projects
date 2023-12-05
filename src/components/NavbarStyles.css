@@ -43,4 +43,43 @@ nav{
 }
 .mobile i{
     color: #fff;
+    cursor: pointer;
+}
+.mobile{
+    display:none ;
+}
+
+@media screen and (max-width:769px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 78px;
+        right: -400px;
+        width: 300px;
+        height: 100vh;
+        background: #2a3239;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 40px 0 0 10px;
+        transition: 0.5s ease-in-out;
+
+    }
+    .mobile{
+        display:block ;
+    }
+    .navbar li{
+        margin-bottom: 25px;
+    }
+    .mobile i{
+        color: #fff;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    .navbar.open{
+        right: 0;
+    }
+
+    
 }
